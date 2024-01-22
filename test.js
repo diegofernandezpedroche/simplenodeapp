@@ -1,4 +1,4 @@
-cons assert = require('assert');
+const assert = require('assert');
 
 describe('Basic Test', function () {
     it('return number of charachters', function () {
