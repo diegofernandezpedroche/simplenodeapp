@@ -33,4 +33,9 @@ jobs:
     - name: My second step
       if: success()
       run: echo "The previous step has finished successfully"
+    - name: My third step
+      uses: actions/checkout@v4
+      with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/ # if your publishing your package to npm or github package repo
           
