@@ -15,8 +15,8 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
-        node-version: [12.x, 14.x, 16.x]
-        #node-version: [16.x]
+        #node-version: [12.x, 14.x, 16.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
         exclude:
           - os: macos-latest
@@ -25,9 +25,9 @@ jobs:
     - name: My first step
       env:
         MY_VAR: Hi there! My name is
-        FIRST_NAME: Chad
-        MIDDLE_NAME: Michael
-        LAST_NAME: Crowell
+        FIRST_NAME: James
+        MIDDLE_NAME: F.
+        LAST_NAME: Pedroche
       run: |
         echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
           
