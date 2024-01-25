@@ -1,5 +1,4 @@
 const http = require("http");
-// Another comment
 
 const port = process.env.PORT || 5000;
 
