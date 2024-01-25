@@ -21,13 +21,13 @@ jobs:
         exclude:
           - os: macos-latest
             node-version: 12.x
-
     steps:
-      - name: my first step
-        env:
-          - MY_VAR: Hi there! my name is
-          - FIRST_NAME: James
-          - MIDDLE_NAME: F.
-          - LAST_NAME: Pedroche
-        run: echo "$MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME
+    - name: My first step
+      env:
+        MY_VAR: Hi there! My name is
+        FIRST_NAME: Chad
+        MIDDLE_NAME: Michael
+        LAST_NAME: Crowell
+      run: |
+        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
           
