@@ -23,13 +23,11 @@ jobs:
             node-version: 12.x
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm install
-    - run: npm install -g mocha
-    - run: npm ci
-    - run: npm run build --if-present
+      - name: my first step
+        env:
+          - MY_VAR: Hi there! my name is
+          - FIRST_NAME: James
+          - MIDDLE_NAME: F.
+          - LAST_NAME: Pedroche
+        run: echo "$MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME
+          
